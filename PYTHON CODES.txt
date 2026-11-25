@@ -1,0 +1,310 @@
+DAY1
+#Name And Age
+name = input("Enter name: ")
+print(type(name))
+age= int(input("Enter age: "))
+print(type(age))
+print("Hello everyone!\n My name is",name,"and I am ",age," years old")
+
+#conditions
+--ifelse:
+-greaterthan
+Attendance = int(input("Enter Attendance in percentage: "))
+if Attendance>75:
+  print("You are eligible for the exam!")
+else:
+  print("Not eligible for the exam!")
+
+-divisibility
+number=int(input("Enter a number:"))
+if number%7 == 0:
+  print("The number is divisible by 7.")
+else:
+  print("The number is not divisible by 7.")
+ 
+-evenodd
+number=int(input("Enter a number:"))
+if number%2 == 0:
+  print("The number is even.")
+else:
+  print("The number is odd.")
+
+-greatervar
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+c=int(input("Enter a number:"))
+if a>b and a>c:
+  print("'a' is the greatest.")
+elif b>a and b>c:
+  print("'b' is the greatest.")
+elif c>a and c>b:
+  print("'c' is the greatest.")
+else:
+  print("All variables are equal.")
+
+-pos/neg
+#check whether given number is positive negative or zero
+num=int(input("Enter a number:"))
+if num>0:
+  print("The number is positive!")
+elif num<0:
+  print("The number is neagative!")
+else:
+  print("The number is zero!")
+
+#Billlllllll
+Prod=input("Product Name:")
+Unit=int(input("No. of Units:"))
+UnitP=int(input("Price per unit:"))
+Totalprice=Unit*UnitP
+print("Total price:",Totalprice)
+Discountpercentage=int(input("Discount percentage:"))
+discountprice= Totalprice * Discountpercentage / 100
+Totalbill=Totalprice-discountprice
+print("Total bill:",Totalbill)
+
+#Lalaland
+#20 per child,60 per adults,40 per sc
+Park=print("Welcome to La La Land")
+Children=int(input("Number of children:"))
+adult=int(input("Number of Adults:"))
+Sc=int(input("Number of Senior Citizens:"))
+Bill=print("Bill Receipt")
+ch=Children*20
+print("Children:",Children,"* 20 =",ch)
+ad=adult*60
+print("Adults:",adult,"* 60 =",ad)
+snc=Sc*40
+print("Senior Citizens:",Sc,"* 40 =",snc)
+Totalb=ch+ad+snc
+print("Total Bill:",Totalb)
+
+DAY2
+#electricity code 1
+unit=int(input("Enter the Units:"))
+(if unit<50:  
+  amount1=unit*5
+  print("The amount is: ",amount1)
+elif unit>=50 and unit<150:
+  amount2=unit*7
+  print("The amount is:",amount2)
+elif unit>=150 and unit<350:
+  amount3=unit*9
+  print("The amount is:",amount3)
+else:
+  amount4=unit*12
+  print("The amount is:",amount4)
+
+#electricity code 2
+#code2
+unit=int(input("Enter the Units:"))
+if unit<50:  
+  amount=unit*5
+elif unit>=50 and unit<150:
+  amount=unit*7
+elif unit>=150 and unit<350:
+  amount=unit*9
+else:
+  amount=unit*12
+print("Total amount according to ",unit,"unit is",amount)
+
+#LOOPS
+-while
+while True:
+  print("I'm Sorry TT")
+
+
+i=1
+while i<=50:
+  if i%2==1: #for even i%2==0
+    print(i,"is odd")
+  i+=1
+
+-multipilication table
+num=int(input("Enter a number:"))
+i=1
+while i<=10:
+  print(num,"x",i,"=",num*i)
+  i+=1
+
+-naturalno.
+#sum of all natural no.s
+num=int(input("Enter a number:"))
+i=1
+sum=0
+while i<=num:
+  sum+=i
+  i+=1
+print(sum)
+------
+num=int(input("Enter a number:"))
+i=1
+while i<=num:
+  print(i)
+  i+=1
+
+----
+i=100
+while i>=1:
+  print(i)
+  i-=1
+------
+num=int(input("Enter a number:"))
+i=1
+sum=0
+while i<=num:
+  sum+=i
+  print(sum)
+  i+=1
+----------
+sum of all odd no.s upto 20
+num = 1
+total = 0
+
+while num <= 20:
+  if num % 2 == 1:
+    total += num
+  num += 1
+
+print("Sum of odd numbers from 1 to 20:", total)
+--------------------
+#sumof all even numbers upto 20
+num = 1
+total = 0
+------------
+#combined sum of any odd or even number:
+i=int(input("Enter a number:"))
+num = 1
+total = 0
+oddtotal=0
+while num <= i:
+  if num % 2 == 0:
+    total += num
+  else:
+    oddtotal+= num
+    
+  num += 1
+
+print("Sum of even numbers from 1 to 20:", total)
+print("Sum of odd numbers from 1 to 20:",oddtotal)
+-------------------
+num=int(input("Enter a number:"))
+count=0
+while num>0:
+  num=num//10
+  count+=1
+print("the number of digits are:", count)
+------------------------
+num=int(input("Enter a number:"))
+count=0
+while num>0:
+  rem=num%10
+  count+=1
+  num=num//10
+print("The number of digits in a number are:", count)
+
+--------------------------------------
+
+#Reverse
+num=int(input("Enter a number:"))
+reverse=0
+while num>0:
+  rem=num%10
+  reverse=reverse*10+rem
+  num=num//10
+print("Reversed number is", reverse )
+------------------------------
+#palindrome number
+num=int(input("Enter a number:"))
+reverse=0
+og=num
+while num>0:
+  rem=num%10
+  reverse=reverse*10+rem
+  num=num//10
+print("Reversed number is",reverse )
+if og==reverse:
+  print(og,"is palindrome num")
+else:
+  print(og,"is not a palindrome num")
+-------------------------------------
+num=int(input("Enter a number:"))
+count=0
+i=1
+while i<=num:
+  if num%i==0:
+    count+=1
+  i+=1
+if count==2:
+  print(num,"is a prime number!")
+else:
+  print(num,"is not a prime number!")
+-------------------------------------------
+#Fibonacci Series
+num =int(input("Enter a number:"))
+a = 0  
+b = 1  
+count = 0
+print("Fibonacci Series:")
+while count < num:
+  print(a, end=" ")
+  c = a + b 
+  a = b 
+  b = c 
+  count += 1
+---------------------------------------------
+#armstrong numbers
+#1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, and 407.
+num=int(input("Enter a number:"))
+count=0
+og=num
+while num>0:
+  digit=num%10
+  count+=1
+  num//=10
+print("Count of digits:",count)
+
+num=og
+sum=0
+while num>0:
+  rem=num%10
+  sum= sum+(rem**count)
+  num=num//10
+
+if og==sum:
+  print(og, "is an armstrong number!")
+else:
+  print(og,"is not an armstrong number!")
+-------------------------
+l=int(input("Enter a upper limit:"))
+for i in range(1,l+1):
+  print(i)
+-------------------
+l=int(input("Enter a upper limit:"))
+print("Even no.s from 1 to",l,":")
+for i in range(1,l+1):
+  if i%2==0:
+    print (i)
+-----------
+a=[20,21,22,23]
+print(a)
+a.append([74,23,43])
+a.insert(1,99)
+print(a[5][1])
+print(a)
+for i in a:
+  print(i)
+-------------------------
+#Even & odd using for from the list
+li=[52,72,57,98,45,12,99]
+even=[]
+odd=[]
+for i in li:
+  if i%2==0:
+    even.append(i)
+  else:
+    odd.append(i)
+print("Even numbers in the list:",even)
+print("Odd numbers in the list:",odd)
+-----------------------------------
+#Sum of all even/odd numbers(Homework)
